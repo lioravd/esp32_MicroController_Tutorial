@@ -15,7 +15,7 @@ int increase = 5;     // Brigtness increase
 
 
 // value has to be between 0 and valueMax
-void ledcAnalogWrite(uint8_t pwm_channel, uint32_t value, uint32_t valueMax = 255) {
+void ledcAnalogWrite(uint8_t pwm_channel, uint32_t value) {
   // calculate duty, 8191 from 2 ^ 13 - 1
   uint32_t duty = value;
 
